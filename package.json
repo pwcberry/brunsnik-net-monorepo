@@ -1,0 +1,16 @@
+{
+  "name": "@brunsnik/monorepo",
+  "type": "module",
+  "licence": "Apache-2.0",
+  "packageManager": "yarn@4.8.1",
+  "author": "Peter Berry<pete@brunsnik.net>",
+  "engines": {
+    "node": ">=24.11"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pwcberry/brunsnik-net-monorepo.git",
+    "directory": "."
+  },
+  "private": true
+}
