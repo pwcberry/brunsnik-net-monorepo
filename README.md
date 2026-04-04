@@ -6,11 +6,6 @@ This repository contains the code to develop and run the brunsnik.net website.
 
 All packages are private and are not submitted to public registries.
 
-* brunsnik-net-eleventy
-* docx-to-md
-* markdown-metadata
-* brunsnik-net-deploy
-
 ### `website/eleventy`
 
 This package contains all the content and the assets to display the website for `brunsnik.net`. 
@@ -19,19 +14,30 @@ document. This repo will also contain the scripts necessary for CSS.
 
 It uses [eleventy](https://www.11ty.dev/) to generate the content as a statically-served website.
 
+### `website/deploy`
+
+This package contains the scripts necessary to push changes into production.
+
+### `website/smoke-tests`
+
+Run smoke tests on the public website to pass acceptance criteria.
+
 ### `library/docx-to-md`
 
-This package will be a Node module that converts Word .docx files into Markdown files suitable for brunsnik.net. 
+This library is a Node module that converts Word .docx files into Markdown 
+files suitable for brunsnik.net. 
 Adds YAML frontmatter for each document with basic information such as `collection` and `dateAdded`. 
 
 ### `library/markdown-metadata`
 
-This package exports a functions to extract the metadata for an existing markdown file or to add metadata to each 
+This library exports a functions to extract the metadata for an existing 
+Markdown file or to add metadata to each 
 Markdown file as frontmatter.
 
-### `website/deploy`
+### `library/styles`
 
-This package contains the scripts necessary to push changes into production.
+This library contains the CSS styles required for brunsnik.net and 
+similarly-branded websites built by the author.
 
 ## Development
 
@@ -41,4 +47,4 @@ _Still in draft_
 
 ## Deployment
 
-_No draft available_
+See the README at [website/deploy](./website/deploy/README.md).
